@@ -1,0 +1,3 @@
+google-cloud-bigquery
+sentence-transformers
+great-expectations

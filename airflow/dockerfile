@@ -1,0 +1,19 @@
+FROM apache/airflow:2.6.1
+USER root
+
+# Accept the MSODBCSQL18 EULA
+RUN echo 'msodbcsql18 msodbcsql/ACCEPT_EULA boolean true' | debconf-set-selections
+
+# Update and upgrade packages
+RUN apt-get update && apt-get -y upgrade
+
+# Install necessary packages
+RUN apt-get install -y msodbcsql18
+
+RUN apt-get autoremove -yqq --purge \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt /
+USER airflow
+RUN pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" -r /requirements.txt

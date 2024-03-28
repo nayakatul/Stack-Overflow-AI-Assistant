@@ -1,9 +1,5 @@
 # STACK OVERFLOW AI 🤖👨‍💻 
 
-
-App Demo : [![Youtube](https://img.shields.io/badge/Youtube-808080?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=_rBbGJGeZG0)
-
-
 ## Introduction :memo: 
 
 In response to a noticeable decline in traffic on Stack Overflow – once a thriving developer community platform – due to the rise of OpenAI's ChatGPT, an application named "StackAI" has been developed. 

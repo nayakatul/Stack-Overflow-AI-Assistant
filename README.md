@@ -81,11 +81,6 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 
 **10. Continuous Integration:** Employed GitHub Actions to perform unit testing with Pytest on any latest code that is pushed into the repo, assuring the effectiveness of the application and its integral components.
 
-## Project Architecture Diagram
-
-![Implemented Architecture Diagram](https://github.com/BigDataIA-Summer2023-Team3/final_project/blob/main/diagrams/Implemented_architecture_diagram.jpg)
-
-
 
 ## To run the dockerized App locally -
 
